@@ -20,12 +20,8 @@ xxxxx
 <script>
   "use strict";
 
-  for (let i = 1; i <= 20; i++) {
-    let stringToPrint = '';
-    for (let j = 0; j < i; j++) {
-      stringToPrint += 'x';
-    }
-    console.log(stringToPrint);
+  for (let i in [...Array(20).keys()]) {
+    console.log('x'.repeat(+i + 1));
   }
 </script>
 </body>
